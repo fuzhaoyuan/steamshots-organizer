@@ -2,7 +2,8 @@
 ## 整理Steam截图  
 
 ### 使用方法:  
-将dist文件夹下的.exe文件复制到存放Steam截图的目录，然后运行。
+将dist文件夹下的.exe文件复制到存放Steam截图的目录，然后运行。  
+需要网络连接。
 
 ### 效果：
 在该目录下，截图会进入对应游戏名的新建文件夹。  
@@ -22,7 +23,8 @@ v0.1: 提供最基础的功能
 ## Organize screenshots taken in Steam  
 
 ### Guide:
-Copy the .exe file in the 'dist' folder to the same directory where screenshots are saved and execute.
+Copy the .exe file in the 'dist' folder to the same directory where screenshots are saved and execute.  
+Requires Internet connection.
 
 ### Effect:
 In this directory, screenshots will be organized into newly created folders that match their game names.  
