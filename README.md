@@ -1,7 +1,7 @@
 # Steam截图整理器 Steamshots-Organizer
 ## 效果图 Example
 
-![](.\Example.png)
+![Example Picture](Example.png)
 
 ## 整理Steam截图  
 
