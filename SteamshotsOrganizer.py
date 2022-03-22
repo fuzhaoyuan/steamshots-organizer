@@ -24,14 +24,14 @@ app_list = get_app_list.json()['applist']['apps']['app']
 id2name = {}
 for i in range(0, len(app_list)):
     if app_list[i]['appid'] in app_ids:
-        id2name[app_list[i]['appid']] = app_list[i]['name']
+        id2name[app_list[i]['appid']] = app_list[i]['name'].replace(':', '-')
 
 # put screenshots into (newly created) folders
 for i in range(0, len(pics)):
     if pathlib.Path(pics[i]).suffix == '.png':
         try:
             app_id = int(pics[i].split('_')[0])
-            folder_path = os.getcwd() + '\\' + id2name.get(app_id, 'Z-Unorganized').split(':')[0]
+            folder_path = os.getcwd() + '\\' + id2name.get(app_id, 'Z-Unorganized')
             if not os.path.exists(folder_path):
                 os.mkdir(folder_path)
             src_path = os.getcwd() + '\\' + pics[i]
