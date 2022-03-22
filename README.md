@@ -1,4 +1,8 @@
 # Steam截图整理器 Steamshots-Organizer
+## 效果图 Example
+
+![](.\Example.png)
+
 ## 整理Steam截图  
 
 ### 使用方法:  
@@ -17,7 +21,7 @@
 欢迎在Issues区提交bug或申请新功能！
 
 #### 更新日志：
-v0.1: 提供最基础的功能
+v0.1: 提供最基础的功能  
 v0.1.1: 修复了尝试对非截图进行处理的bug
 
 ---
@@ -39,5 +43,5 @@ E.g., the screenshots of "The Witcher 3: Wild Hunt" will enter the folder called
 Welcome to report bugs or apply for new features in the Issues section!
 
 #### UpdateLog:
-v0.1: Provides basic functions.
+v0.1: Provides basic functions.  
 v0.1.1: Fixed bug trying to handle non-screenshots.
