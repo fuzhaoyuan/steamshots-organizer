@@ -1,3 +1,4 @@
+from multiprocessing.sharedctypes import Value
 import os
 import pathlib
 import requests
@@ -10,7 +11,10 @@ pics = os.listdir()
 app_ids = set()
 for i in range(0, len(pics)):
     if pathlib.Path(pics[i]).suffix == '.png':
-        app_ids.add(int(pics[i].split('_')[0]))
+        try:
+            app_ids.add(int(pics[i].split('_')[0]))
+        except ValueError:
+            continue
 
 # cache app list json from Steam API
 get_app_list = requests.get('http://api.steampowered.com/ISteamApps/GetAppList/v1/')
@@ -25,9 +29,12 @@ for i in range(0, len(app_list)):
 # put screenshots into (newly created) folders
 for i in range(0, len(pics)):
     if pathlib.Path(pics[i]).suffix == '.png':
-        app_id = int(pics[i].split('_')[0])
-        folder_path = os.getcwd() + '\\' + id2name.get(app_id, 'Z-Unorganized').split(':')[0]
-        if not os.path.exists(folder_path):
-            os.mkdir(folder_path)
-        src_path = os.getcwd() + '\\' + pics[i]
-        shutil.move(src_path, folder_path)
+        try:
+            app_id = int(pics[i].split('_')[0])
+            folder_path = os.getcwd() + '\\' + id2name.get(app_id, 'Z-Unorganized').split(':')[0]
+            if not os.path.exists(folder_path):
+                os.mkdir(folder_path)
+            src_path = os.getcwd() + '\\' + pics[i]
+            shutil.move(src_path, folder_path)
+        except ValueError:
+            continue

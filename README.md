@@ -18,6 +18,7 @@
 
 #### 更新日志：
 v0.1: 提供最基础的功能
+v0.1.1: 修复了尝试对非截图进行处理的bug
 
 ---
 ## Organize screenshots taken in Steam  
@@ -39,3 +40,4 @@ Welcome to report bugs or apply for new features in the Issues section!
 
 #### UpdateLog:
 v0.1: Provides basic functions.
+v0.1.1: Fixed bug trying to handle non-screenshots.
