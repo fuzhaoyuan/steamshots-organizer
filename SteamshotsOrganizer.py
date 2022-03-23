@@ -17,7 +17,7 @@ for i in range(0, len(pics)):
             continue
 
 # cache app list json from Steam API
-get_app_list = requests.get('http://api.steampowered.com/ISteamApps/GetAppList/v1/')
+get_app_list = requests.get('http://api.steampowered.com/ISteamApps/GetAppList/v1/', verify = False)
 app_list = get_app_list.json()['applist']['apps']['app']
 
 # find names of all app_ids
