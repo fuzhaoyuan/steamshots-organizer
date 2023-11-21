@@ -6,7 +6,7 @@
 ## 整理Steam截图  
 
 ### 使用方法:  
-将dist文件夹下的.exe文件复制到存放Steam截图的目录，然后运行。  
+下载Releases中的最新版.exe文件到存放Steam截图的目录，然后运行。  
 需要网络连接。
 
 ### 效果：
@@ -31,7 +31,7 @@ v0.1.4：更改了游戏匹配方法，时间复杂度从O(mn)提升为O(m+n)。
 ## Organize screenshots taken in Steam  
 
 ### Guide:
-Copy the .exe file in the 'dist' folder to the same directory where screenshots are saved and execute.  
+Download the latest version of .exe file in Releases to the same directory where screenshots are saved and execute.  
 Requires Internet connection.
 
 ### Effect:
