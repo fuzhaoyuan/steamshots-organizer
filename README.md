@@ -24,7 +24,7 @@
 v0.1：提供最基础的功能。  
 v0.1.1：修复了尝试对非截图进行处理的bug。  
 v0.1.2：将‘:’的处理从截断改为替换成‘-’。  
-v0.1.3：将获取游戏列表的请求改为不进行SSL验证。
+v0.1.3：将获取游戏列表的请求改为不进行SSL验证。  
 v0.1.4：更改了游戏匹配方法，时间复杂度从O(mn)提升为O(m+n)。
 
 ---
@@ -49,5 +49,5 @@ Welcome to report bugs or apply for new features in the Issues section!
 v0.1: Provides basic functions.  
 v0.1.1: Fixed bug trying to handle non-screenshots.  
 v0.1.2: Changed the process of ':' from split to replace with '-'.  
-v0.1.3: Changed the SSL verification of API request to False.
+v0.1.3: Changed the SSL verification of API request to False.  
 v0.1.4: Updated the way to match games, improved complexity from O(mn) to O(m+n).
