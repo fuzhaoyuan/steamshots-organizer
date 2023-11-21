@@ -1,4 +1,4 @@
 __pycache__
 build
 SteamshotsOrganizer.spec
-dist/SteamshotsOrganizer
+dist/SteamshotsOrganizer/_internal
